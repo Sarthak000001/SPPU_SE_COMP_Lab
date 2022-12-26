@@ -1,0 +1,1 @@
+{"name":"Local: hello","url":"c:\\Users\\sarthak\\Desktop\\FDS\\hello.cpp","tests":[{"id":1663420508138,"input":"2\n9\nsharechat\n4\nchef","output":"shizxvzsg\nsxuv"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sarthak\\Desktop\\FDS\\hello.cpp","group":"local","local":true}
