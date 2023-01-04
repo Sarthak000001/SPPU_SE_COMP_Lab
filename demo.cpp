@@ -270,8 +270,19 @@ using namespace std;
 	 
 int main()
 {     int k = 10;
-      frl(0,10,k--);
- 
-	
+//       frl(0,10,k--);
+ //a->97 A->65
+// l to u ---> -32
+// u to l ---> +32
+string str = "LeveL";
+string ans = "";
+for(int i=0;i < str.length();i++){
+      if('a' <= str[i] && str[i] <= 'z'){
+            ans.push_back(str[i]-32);
+      }else{
+            ans.push_back(str[i]);
+      }
+}
+cout << ans << endl;
 return 0;
 }

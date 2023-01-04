@@ -56,21 +56,25 @@ public:
     }
     void del()
     {
-        Job item = arr[front];
+        
         if (front == -1)
         {
             cout << "No Job entries \n";
-            
         }
         else
         {
-
+            Job item = arr[front];
             front++;
-            cout << "___________: Deleted Successfully :___________\n";
-            cout << "\t"
-                 << "Job title :" << item.job_title << endl;
-            cout << "\t"
-                 << "Job Priority : " << item.priority << endl;
+            if (item.priority != -1)
+            {
+                cout << "___________: Deleted Successfully :___________\n";
+                cout << "\t"
+                     << "Job title :" << item.job_title << endl;
+                cout << "\t"
+                     << "Job Priority : " << item.priority << endl;
+            }else{
+                cout << "No Job entries \n";
+            }
         }
     }
 

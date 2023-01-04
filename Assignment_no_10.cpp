@@ -136,30 +136,33 @@ int evaluation(string s)
 			cin >> t;
 			st.push(t);
 		}
-		else if(s[i]>='0' && s[i]<='9')
+		else if(s[i] <= '1' && s[i] <= '9'){
+			st.push(s[i]);
+		}
+		else
 		{
 			int x1, x2, r;
-			x2 = st.pop();
-			x1 = st.pop();
+			x2 = st.pop()-48;
+			x1 = st.pop()-48;
 
 			switch (s[i])
 			{
 			case '+':
 
 				r = x1 + x2;
-				st.push(r);
+				st.push(r+48);
 				break;
 			case '-':
 				r = x1 - x2;
-				st.push(r);
+				st.push(r+48);
 				break;
 			case '*':
 				r = x1 * x2;
-				st.push(r);
+				st.push(r+48);
 				break;
 			case '/':
 				r = x1 / x2;
-				st.push(r);
+				st.push(r+48);
 				break;
 
 			default:

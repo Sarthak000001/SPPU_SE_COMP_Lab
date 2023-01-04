@@ -13,8 +13,8 @@ class Sort:
             if(pivot > self.l[i]):
                 cnt+=1
         pivotindex=s+cnt
-        # swap(self.l[s],self.l[pivotindex])
-        temp=self.l[s]
+        # swap(self.l[s],self.l[pivotindex]) 
+        temp=self.l[s] 
         self.l[s]=self.l[pivotindex]
         self.l[pivotindex]=temp
 

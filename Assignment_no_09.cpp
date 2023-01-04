@@ -117,8 +117,17 @@ public:
                 }
         }
 };
+// void sumn(int n){
+//         int sum = 0;
+//        for(int i=0;i <= n;i++){
+//          sum += i;
+//        }
+//        cout << "Sum is : " << sum << endl;
+// }
 int main()
-{
+{ // cout << "Enter n : " << endl;
+        // int n; cin >> n;
+        //  sumn(n);
 
         while (true)
         {
@@ -145,8 +154,8 @@ int main()
                         }
                 }
                 else if (n == 2)
-                {  
-                    cout << "----->Thank you...!!<-----\n";
+                {
+                        cout << "----->Thank you...!!<-----\n";
                         break;
                 }
                 else

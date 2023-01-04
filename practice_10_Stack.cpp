@@ -5,6 +5,8 @@
 using namespace std;
 // Implementing the Stack using the linked ist
 // making class node
+
+
 class Node
 {
     char data;
@@ -210,8 +212,8 @@ void Operation::evaluation()
         else if (isdigit(ans[i]))
         {
             int x, y, result;
-            x = (int)(st.pop()-'0');
-            y = (int)(st.pop()-'0');
+            x = (st.pop()-'0');
+            y = (st.pop()-'0');
             if (ans[i] == '+')
             {
                 result = y + x;

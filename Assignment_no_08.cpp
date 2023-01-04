@@ -68,7 +68,7 @@ public:
     }
     void display()
     {
-        cout << "\tSlot No.    start time       End time          Status\n";
+        cout << "\tSlot No.    start time       End time       Status\n";
         for (int i = 0; i < 8; i++)
         {
             cout << "\t" << arr[i].slot_no << "\t";
